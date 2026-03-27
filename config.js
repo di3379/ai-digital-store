@@ -32,87 +32,87 @@ const CONFIG = {
         // Entry-Level: Low Barrier, High Volume
         1: {
             id: 1,
-            name: "AI鐢靛晢鍏ラ棬绉樼睄",
+            name: "AI电商入门秘籍",
             originalPrice: 29.99,
             price: 4.99,
             priceInSOL: 0.025,
             type: "starter-pack",
             deliveryMethod: "instant-email",
             filePath: "/assets/products/ai-ecommerce-starter.pdf",
-            description: "21椤靛揩閫熷叆闂ㄦ寚鍗楋細3灏忔椂瀛︿細AI鑷姩鍖栫數鍟?,
+            description: "21页快速入门指南：3小时学会AI自动化电商",
             features: [
-                "5涓幇鎴愯嚜鍔ㄥ寲鑴氭湰",
-                "3涓珮杞寲鏂囨妯℃澘", 
-                "姣忔棩鎵ц娓呭崟",
-                "7澶╅偖浠舵寚瀵?
+                "5个现成自动化脚本",
+                "3个高转化文案模板", 
+                "每日执行清单",
+                "7天邮件指导"
             ],
-            badge: "馃敟 闄愭椂鐗逛环",
+            badge: "🔥 限时特价",
             conversionRate: 12.5,
             soldCount: 127
         },
         // Mid-Level: Value Stack
         2: {
             id: 2,
-            name: "AI鑷姩鍖栧ぇ甯堢彮",
+            name: "AI自动化大师班",
             originalPrice: 99,
             price: 14.99,
             priceInSOL: 0.075,
             type: "premium-course",
             deliveryMethod: "download+coaching",
             filePath: "/assets/products/ai-masterclass.zip",
-            description: "瀹屾暣6鍛ㄨ缁冭惀锛氫粠闆跺埌$10K/鏈堣嚜鍔ㄥ寲鏀跺叆",
+            description: "完整6周训练营：从零到$10K/月自动化收入",
             features: [
-                "瀹屾暣瑙嗛璇剧▼锛?2灏忔椂锛?,
-                "婧愮爜搴撹闂潈闄?,
-                "绉佹湁Discord绀惧尯",
-                "姣忓懆鐩存挱绛旂枒",
-                "涓€у寲鎸囧"
+                "完整视频课程（12小时）",
+                "源码库访问权限",
+                "私有Discord社区",
+                "每周直播答疑",
+                "个性化指导"
             ],
-            badge: "猸?鏈€楂樿瘎鍒?,
+            badge: "⭐ 最高评分",
             conversionRate: 6.8,
             soldCount: 89
         },
         // High-Ticket: Premium Solution
         3: {
             id: 3,
-            name: "鍏ㄨ嚜鍔ㄧ數鍟嗗笣鍥芥瀯寤哄櫒",
+            name: "全自动电商帝国构建器",
             originalPrice: 197,
             price: 24.99,
             priceInSOL: 0.125,
             type: "enterprise-suite",
             deliveryMethod: "full-access",
             filePath: "https://wcnrabvzk683.feishu.cn/base/R8YzbyjFxairVLstigPcbD7Dnfx",
-            description: "绔埌绔В鍐虫柟妗堬細AI+鍖哄潡閾?鑷姩鍖栧伐浣滄祦",
+            description: "端到端解决方案：AI+区块链+自动化工作流",
             features: [
-                "鍏ㄥ婧愪唬鐮侊紙鍟嗕笟鎺堟潈锛?,
-                "Solana鏀粯闆嗘垚",
-                "椋炰功CRM绯荤粺",
-                "姣忔湀鏇存柊鏀寔",
-                "浼樺厛鎶€鏈敮鎸?,
-                "鐧芥爣鎺堟潈"
+                "全套源代码（商业授权）",
+                "Solana支付集成",
+                "飞书CRM系统",
+                "每月更新支持",
+                "优先技术支持",
+                "白标授权"
             ],
-            badge: "馃殌 闄愭椂鍗囩骇",
+            badge: "🚀 限时升级",
             conversionRate: 3.5,
             soldCount: 42
         },
         // Upsell: Complementary Product
         4: {
             id: 4,
-            name: "绀句氦濯掍綋鑷姩鍖栧浠?,
+            name: "社交媒体自动化套件",
             originalPrice: 49,
             price: 9.99,
             priceInSOL: 0.05,
             type: "upsell-toolkit",
             deliveryMethod: "instant-access",
             filePath: "/assets/products/social-automation.zip",
-            description: "姣忓ぉ5鍒嗛挓锛岃嚜鍔ㄨ幏鍙?00+绮惧噯娴侀噺",
+            description: "每天5分钟，自动获取100+精准流量",
             features: [
-                "TikTok/Reels鑷姩鐢熸垚鑴氭湰",
-                "30涓珮浜掑姩鏂囨妯℃澘",
-                "鍙戝竷鎺掓湡宸ュ叿",
-                "鏁版嵁鍒嗘瀽闈㈡澘"
+                "TikTok/Reels自动生成脚本",
+                "30个高互动文案模板",
+                "发布排期工具",
+                "数据分析面板"
             ],
-            badge: "馃幆 鐑棬鎺ㄨ崘",
+            badge: "🎯 热门推荐",
             conversionRate: 8.2,
             soldCount: 156
         }
