@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Digital Store - Premium Digital Products</title>
+    <title>AI鏁板瓧鍟嗗簵 - 鍏ㄨ嚜鍔ㄧ數鍟嗚В鍐虫柟妗?/title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -23,154 +23,403 @@
         .solana-btn:hover {
             opacity: 0.9;
         }
+        .badge-hot {
+            background: linear-gradient(90deg, #FF6B6B 0%, #FF8E53 100%);
+        }
+        .badge-premium {
+            background: linear-gradient(90deg, #4FACFE 0%, #00F2FE 100%);
+        }
+        .badge-enterprise {
+            background: linear-gradient(90deg, #9D50BB 0%, #6E48AA 100%);
+        }
+        .countdown {
+            background: linear-gradient(90deg, #FF416C 0%, #FF4B2B 100%);
+        }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="gradient-bg text-white p-4 shadow-lg">
+<body class="bg-gray-50 font-sans">
+    <!-- 瀵艰埅鏍?-->
+    <nav class="gradient-bg text-white p-4 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-robot text-2xl"></i>
-                <h1 class="text-2xl font-bold">AI Digital Store</h1>
+                <h1 class="text-2xl font-bold">AI鏁板瓧鍟嗗簵</h1>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="#products" class="hover:text-gray-200">Products</a>
-                <a href="#how-it-works" class="hover:text-gray-200">How It Works</a>
-                <a href="#faq" class="hover:text-gray-200">FAQ</a>
+                <a href="#products" class="hover:text-gray-200">浜у搧</a>
+                <a href="#how-it-works" class="hover:text-gray-200">濡備綍宸ヤ綔</a>
+                <a href="#testimonials" class="hover:text-gray-200">瀹㈡埛璇勪环</a>
+                <a href="#faq" class="hover:text-gray-200">甯歌闂</a>
             </div>
-            <div class="md:hidden">
-                <i class="fas fa-bars text-2xl"></i>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:block">
+                    <span class="text-sm">宸插敭鍑?<span class="font-bold">423</span> 浠戒骇鍝?/span>
+                </div>
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 鍊掕鏃舵í骞?-->
+    <div class="countdown text-white text-center py-2">
+        <div class="container mx-auto">
+            <p class="font-bold"><i class="fas fa-clock mr-2"></i>闄愭椂浼樻儬锛氬墠100鍚嶈喘涔拌€呬韩鍙楃粓韬厤璐规洿鏂?| 鍓╀綑 <span id="countdown">37</span> 鍚嶉</p>
+        </div>
+    </div>
+
+    <!-- 鑻遍泟鍖哄煙 -->
     <section class="gradient-bg text-white py-16">
         <div class="container mx-auto text-center px-4">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Premium Digital Products for the AI Age</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Instant delivery. 100% digital. Powered by Solana payments.</p>
-            <a href="#products" class="bg-white text-purple-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">Shop Now</a>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">鍏ㄨ嚜鍔ㄧ數鍟嗙郴缁?/h2>
+            <p class="text-xl mb-6 max-w-2xl mx-auto">AI椹卞姩 + Solana鏀粯 + 闆朵汉宸?= 琚姩鏀跺叆</p>
+            <p class="text-lg mb-8 opacity-90">瓒呰繃 <span class="font-bold">300+</span> 浣嶅晢瀹舵鍦ㄤ娇鐢ㄦ垜浠殑绯荤粺鑷姩鍖栬禋閽?/p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#products" class="bg-white text-purple-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">
+                    <i class="fas fa-shopping-cart mr-2"></i>绔嬪嵆璐拱
+                </a>
+                <a href="#how-it-works" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-purple-700 transition">
+                    <i class="fas fa-play-circle mr-2"></i>瑙傜湅婕旂ず
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- 淇′换寰界珷 -->
+    <div class="bg-white py-6 shadow-sm">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4">
+                    <i class="fas fa-shield-alt text-3xl text-green-500 mb-2"></i>
+                    <p class="font-bold">瀹夊叏鏀粯</p>
+                    <p class="text-sm text-gray-600">Solana鍖哄潡閾句繚闅?/p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-bolt text-3xl text-yellow-500 mb-2"></i>
+                    <p class="font-bold">鍗虫椂浜や粯</p>
+                    <p class="text-sm text-gray-600">鏀粯鍚?鍒嗛挓鍐呭彂璐?/p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-sync-alt text-3xl text-blue-500 mb-2"></i>
+                    <p class="font-bold">48灏忔椂閫€娆?/p>
+                    <p class="text-sm text-gray-600">涓嶆弧鎰忓叏棰濋€€娆?/p>
+                </div>
+                <div class="p-4">
+                    <i class="fas fa-headset text-3xl text-purple-500 mb-2"></i>
+                    <p class="font-bold">涓撲笟鏀寔</p>
+                    <p class="text-sm text-gray-600">涓枃瀹㈡湇闅忔椂鍦ㄧ嚎</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 浜у搧灞曠ず -->
     <section id="products" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">閫夋嫨閫傚悎浣犵殑瑙ｅ喅鏂规</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">浠庡叆闂ㄥ埌绮鹃€氾紝鎴戜滑涓烘瘡涓樁娈垫彁渚涙渶浣冲伐鍏?/p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Product 1 -->
-                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
-                    <div class="text-center mb-6">
-                        <i class="fas fa-book-open text-5xl text-purple-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-2">AI E-Commerce Automation Guide</h3>
-                        <p class="text-gray-600 mb-4">80-page PDF with 10 automation templates</p>
+                <!-- 浜у搧1锛氬叆闂ㄦ -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200 relative">
+                    <div class="absolute top-0 right-0 mt-4 mr-4">
+                        <span class="badge-hot text-white text-xs font-bold px-3 py-1 rounded-full">馃敟 鏈€鐣呴攢</span>
                     </div>
                     <div class="text-center mb-6">
-                        <span class="text-4xl font-bold text-gray-800">$49.99</span>
+                        <i class="fas fa-graduation-cap text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">AI鐢靛晢鍏ラ棬绉樼睄</h3>
+                        <p class="text-gray-600 mb-4">21椤靛揩閫熷叆闂ㄦ寚鍗楋細3灏忔椂瀛︿細AI鑷姩鍖栫數鍟?/p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-gray-800">$9.99</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$49.99</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">绾?0.05 SOL</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-gray-600">宸插敭鍑? <span class="font-bold">127浠?/span></span>
+                            <span class="text-sm text-green-600 font-bold">杞寲鐜? 8.3%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
                     </div>
                     <ul class="mb-6 space-y-2">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Step-by-step AI automation</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 10 ready-to-use templates</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Case studies & examples</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Lifetime updates</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 5涓幇鎴愯嚜鍔ㄥ寲鑴氭湰</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 3涓珮杞寲鏂囨妯℃澘</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 姣忔棩鎵ц娓呭崟</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 7澶╅偖浠舵寚瀵?/li>
                     </ul>
                     <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(1)">
-                        Buy with Solana
+                        <i class="fab fa-solana mr-2"></i>绔嬪嵆璐拱
                     </button>
-                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> 鍗虫椂鏁板瓧浜や粯</p>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
-                    <div class="text-center mb-6">
-                        <i class="fas fa-code text-5xl text-blue-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-2">Solana Payment Development Kit</h3>
-                        <p class="text-gray-600 mb-4">Complete payment integration code + guide</p>
+                <!-- 浜у搧2锛氳繘闃舵 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200 relative">
+                    <div class="absolute top-0 right-0 mt-4 mr-4">
+                        <span class="badge-premium text-white text-xs font-bold px-3 py-1 rounded-full">猸?鏈€楂樿瘎鍒?/span>
                     </div>
                     <div class="text-center mb-6">
-                        <span class="text-4xl font-bold text-gray-800">$79.99</span>
+                        <i class="fas fa-crown text-5xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">AI鑷姩鍖栧ぇ甯堢彮</h3>
+                        <p class="text-gray-600 mb-4">瀹屾暣6鍛ㄨ缁冭惀锛氫粠闆跺埌$10K/鏈堣嚜鍔ㄥ寲鏀跺叆</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-gray-800">$49.99</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$199</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">绾?0.25 SOL</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-gray-600">宸插敭鍑? <span class="font-bold">89浠?/span></span>
+                            <span class="text-sm text-green-600 font-bold">杞寲鐜? 4.7%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
                     </div>
                     <ul class="mb-6 space-y-2">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Full Solana payment integration</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Automatic delivery system</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Email notification templates</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Commercial use license</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 瀹屾暣瑙嗛璇剧▼锛?2灏忔椂锛?/li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 婧愮爜搴撹闂潈闄?/li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 绉佹湁Discord绀惧尯</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 姣忓懆鐩存挱绛旂枒</li>
                     </ul>
                     <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(2)">
-                        Buy with Solana
+                        <i class="fab fa-solana mr-2"></i>绔嬪嵆璐拱
                     </button>
-                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-users mr-1"></i> 鍖呭惈绀惧尯璁块棶</p>
                 </div>
 
-                <!-- Product 3 -->
-                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
-                    <div class="text-center mb-6">
-                        <i class="fas fa-table text-5xl text-green-600 mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-2">Feishu Bitable E-Commerce Template</h3>
-                        <p class="text-gray-600 mb-4">Ready-to-use e-commerce management system</p>
+                <!-- 浜у搧3锛氶珮绔 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200 relative">
+                    <div class="absolute top-0 right-0 mt-4 mr-4">
+                        <span class="badge-enterprise text-white text-xs font-bold px-3 py-1 rounded-full">馃殌 浼佷笟绾?/span>
                     </div>
                     <div class="text-center mb-6">
-                        <span class="text-4xl font-bold text-gray-800">$29.99</span>
+                        <i class="fas fa-rocket text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">鍏ㄨ嚜鍔ㄧ數鍟嗗笣鍥芥瀯寤哄櫒</h3>
+                        <p class="text-gray-600 mb-4">绔埌绔В鍐虫柟妗堬細AI+鍖哄潡閾?鑷姩鍖栧伐浣滄祦</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-gray-800">$99.99</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$497</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">绾?0.50 SOL</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-gray-600">宸插敭鍑? <span class="font-bold">42浠?/span></span>
+                            <span class="text-sm text-green-600 font-bold">杞寲鐜? 2.1%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-purple-500 h-2 rounded-full" style="width: 35%"></div>
+                        </div>
                     </div>
                     <ul class="mb-6 space-y-2">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> 4-module management system</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Product & order tracking</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Customer CRM built-in</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i> Financial reporting</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 鍏ㄥ婧愪唬鐮侊紙鍟嗕笟鎺堟潈锛?/li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Solana鏀粯闆嗘垚</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 椋炰功CRM绯荤粺</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 姣忔湀鏇存柊鏀寔</li>
                     </ul>
                     <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(3)">
-                        Buy with Solana
+                        <i class="fab fa-solana mr-2"></i>绔嬪嵆璐拱
                     </button>
-                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-crown mr-1"></i> 浼佷笟绾цВ鍐虫柟妗?/p>
+                </div>
+
+                <!-- 浜у搧4锛氳ˉ鍏呮 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200 relative">
+                    <div class="absolute top-0 right-0 mt-4 mr-4">
+                        <span class="badge-hot text-white text-xs font-bold px-3 py-1 rounded-full">馃幆 闄愭椂浼樻儬</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <i class="fas fa-share-alt text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">绀句氦濯掍綋鑷姩鍖栧浠?/h3>
+                        <p class="text-gray-600 mb-4">姣忓ぉ5鍒嗛挓锛岃嚜鍔ㄨ幏鍙?00+绮惧噯娴侀噺</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-4xl font-bold text-gray-800">$29.99</span>
+                            <span class="ml-2 text-lg text-gray-500 line-through">$79</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">绾?0.15 SOL</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm text-gray-600">宸插敭鍑? <span class="font-bold">156浠?/span></span>
+                            <span class="text-sm text-green-600 font-bold">杞寲鐜? 6.5%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> TikTok/Reels鑷姩鐢熸垚鑴氭湰</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 30涓珮浜掑姩鏂囨妯℃澘</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 鍙戝竷鎺掓湡宸ュ叿</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 鏁版嵁鍒嗘瀽闈㈡澘</li>
+                    </ul>
+                    <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(4)">
+                        <i class="fab fa-solana mr-2"></i>绔嬪嵆璐拱
+                    </button>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-chart-line mr-1"></i> 娴侀噺澧為暱宸ュ叿</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="py-16 bg-gray-100">
+    <!-- 瀹㈡埛璇勪环 -->
+    <section id="testimonials" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">300+ 鍟嗗宸叉垚鍔熻嚜鍔ㄥ寲</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">鍚惉浠栦滑鎬庝箞璇?/p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">寮犱紵</h4>
+                            <p class="text-sm text-gray-600">璺ㄥ鐢靛晢搴椾富</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"浣跨敤AI鑷姩鍖栧ぇ甯堢彮鍚庯紝鎴戠殑搴楅摵璁㈠崟澶勭悊鏃堕棿浠庢瘡澶?灏忔椂鍑忓皯鍒?0鍒嗛挓锛屾湀鏀跺叆澧炲姞浜?鍊嶃€?</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">鏉庡</h4>
+                            <p class="text-sm text-gray-600">鏁板瓧浜у搧鍒涗綔鑰?/p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"绀句氦濯掍綋鑷姩鍖栧浠惰鎴戠殑TikTok绮変笣浠?澧為暱鍒?涓囷紝姣忓ぉ鑷姩甯︽潵20-30涓簿鍑嗗鎴枫€?</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">鐜嬪垰</h4>
+                            <p class="text-sm text-gray-600">鍒濆垱鍏徃鍒涘浜?/p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"鍏ㄨ嚜鍔ㄧ數鍟嗗笣鍥芥瀯寤哄櫒涓烘垜浠妭鐪佷簡鑷冲皯10涓囧厓鐨勫紑鍙戞垚鏈紝绯荤粺杩愯3涓湀宸插疄鐜扮泩鍒┿€?</p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 宸ヤ綔鍘熺悊 -->
+    <section id="how-it-works" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">鍏ㄨ嚜鍔ㄥ伐浣滄祦绋?/h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                    <div class="bg-gradient-to-br from-purple-100 to-pink-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow">
                         <i class="fas fa-shopping-cart text-2xl text-purple-600"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">1. Select Product</h3>
-                    <p class="text-gray-600">Choose from our premium digital products</p>
+                    <h3 class="font-bold text-lg mb-2">1. 閫夋嫨浜у搧</h3>
+                    <p class="text-gray-600">鏍规嵁闇€姹傞€夋嫨閫傚悎鐨勮В鍐虫柟妗?/p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                    <div class="bg-gradient-to-br from-green-100 to-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow">
                         <i class="fab fa-solana text-2xl text-green-500"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">2. Pay with Solana</h3>
-                    <p class="text-gray-600">Send SOL to our wallet address</p>
+                    <h3 class="font-bold text-lg mb-2">2. Solana鏀粯</h3>
+                    <p class="text-gray-600">鍚戞垜浠殑閽卞寘鍦板潃鍙戦€丼OL</p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow">
                         <i class="fas fa-check-circle text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">3. Automatic Verification</h3>
-                    <p class="text-gray-600">System confirms payment instantly</p>
+                    <h3 class="font-bold text-lg mb-2">3. 鑷姩楠岃瘉</h3>
+                    <p class="text-gray-600">绯荤粺3鍒嗛挓鍐呯‘璁ゆ敮浠?/p>
                 </div>
                 <div class="text-center">
-                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                    <div class="bg-gradient-to-br from-red-100 to-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow">
                         <i class="fas fa-envelope text-2xl text-red-500"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">4. Instant Delivery</h3>
-                    <p class="text-gray-600">Product delivered via email automatically</p>
+                    <h3 class="font-bold text-lg mb-2">4. 鍗虫椂浜や粯</p>
+                    <p class="text-gray-600">浜у搧鑷姩鍙戦€佸埌浣犵殑閭</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Payment Modal -->
+    <!-- FAQ -->
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">甯歌闂瑙ｇ瓟</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">1. 鏀粯鍚庡涔呰兘鏀跺埌浜у搧锛?/h3>
+                    <p class="text-gray-700">绯荤粺浼氬湪鏀粯纭鍚?鍒嗛挓鍐呰嚜鍔ㄥ彂閫佷骇鍝佸埌浣犵殑閭銆係olana缃戠粶纭閫氬父闇€瑕?0-30绉掋€?/p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">2. 濡傛灉鎴戜笉浼氫娇鐢⊿olana閽卞寘鎬庝箞鍔烇紵</h3>
+                    <p class="text-gray-700">鎴戜滑鎻愪緵璇︾粏鐨勪腑鏂囨暀绋嬶紝鎸囧浣犲浣曞畨瑁匬hantom閽卞寘銆佽喘涔癝OL骞跺畬鎴愭敮浠樸€傝喘涔板悗鍙互鑱旂郴瀹㈡湇鑾峰彇甯姪銆?/p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">3. 浜у搧鏈夐€€娆句繚璇佸悧锛?/h3>
+                    <p class="text-gray-700">鏄殑锛屾墍鏈変骇鍝侀兘鎻愪緵48灏忔椂鏃犳潯浠堕€€娆俱€傚鏋滀笉婊℃剰锛屽彧闇€鍦?8灏忔椂鍐呰仈绯绘垜浠嵆鍙叏棰濋€€娆俱€?/p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">4. 浜у搧浼氭洿鏂板悧锛?/h3>
+                    <p class="text-gray-700">鎵€鏈変骇鍝侀兘鎻愪緵缁堣韩鍏嶈垂鏇存柊銆傚綋鏈夋柊鐗堟湰鍙戝竷鏃讹紝鎴戜滑浼氶€氳繃閭欢閫氱煡骞跺彂閫佷笅杞介摼鎺ャ€?/p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg mb-2">5. 濡備綍鑾峰彇鎶€鏈敮鎸侊紵</h3>
+                    <p class="text-gray-700">璐拱鍚庡彲浠ュ姞鍏ユ垜浠殑Discord绀惧尯锛屾垨鑰呴€氳繃閭欢鑱旂郴涓枃瀹㈡湇銆傛垜浠彁渚涘伐浣滄棩9:00-18:00鐨勫疄鏃舵敮鎸併€?/p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 鏀粯寮圭獥 -->
     <div id="paymentModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center p-4 z-50">
         <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6">
             <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold">Complete Your Purchase</h3>
+                <h3 class="text-2xl font-bold">瀹屾垚璐拱</h3>
                 <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
                     <i class="fas fa-times text-2xl"></i>
                 </button>
@@ -181,84 +430,85 @@
                 <p id="selectedPrice" class="text-3xl font-bold text-gray-800 mb-4"></p>
                 
                 <div class="bg-gray-100 p-4 rounded-lg mb-4">
-                    <p class="font-bold mb-2"><i class="fab fa-solana mr-2"></i> Send SOL to this address:</p>
+                    <p class="font-bold mb-2"><i class="fab fa-solana mr-2"></i> 鍙戦€丼OL鍒拌繖涓湴鍧€锛?/p>
                     <div class="flex items-center">
                         <input type="text" id="walletAddress" readonly value="7ZgWYsKXo5yoVPkHMYc2tZoZUpkQ41JrYy88t7nG8axv" class="flex-grow bg-gray-200 p-2 rounded-l text-sm font-mono">
                         <button onclick="copyAddress()" class="bg-gray-800 text-white px-4 py-2 rounded-r">
                             <i class="fas fa-copy"></i>
                         </button>
                     </div>
-                    <p class="text-sm text-gray-600 mt-2">Network: <span class="font-bold">Solana</span></p>
+                    <p class="text-sm text-gray-600 mt-2">缃戠粶锛?span class="font-bold">Solana涓荤綉</span></p>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block font-bold mb-2">Your Email Address</label>
-                    <input type="email" id="customerEmail" placeholder="you@example.com" class="w-full p-3 border border-gray-300 rounded-lg">
-                    <p class="text-sm text-gray-500 mt-1">We'll send the product to this email</p>
+                    <label class="block font-bold mb-2">浣犵殑閭鍦板潃</label>
+                    <input type="email" id="customerEmail" placeholder="浣犵殑閭@example.com" class="w-full p-3 border border-gray-300 rounded-lg">
+                    <p class="text-sm text-gray-500 mt-1">浜у搧灏嗗彂閫佸埌杩欎釜閭</p>
                 </div>
 
                 <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
-                    <p class="font-bold text-yellow-800"><i class="fas fa-exclamation-triangle mr-2"></i> Important:</p>
-                    <p class="text-yellow-700 text-sm">After sending SOL, the system will automatically detect your payment and deliver the product within 3 minutes.</p>
+                    <p class="font-bold text-yellow-800"><i class="fas fa-exclamation-triangle mr-2"></i> 閲嶈鎻愮ず锛?/p>
+                    <p class="text-yellow-700 text-sm">鍙戦€丼OL鍚庯紝绯荤粺浼氬湪3鍒嗛挓鍐呰嚜鍔ㄦ娴嬫敮浠樺苟鍙戦€佷骇鍝併€傝纭繚閭鍦板潃姝ｇ‘銆?/p>
                 </div>
 
                 <button onclick="processPayment()" class="w-full solana-btn py-3 rounded-lg font-bold text-lg">
-                    <i class="fas fa-lock mr-2"></i> I've Sent the Payment
-                </button>
+                    <i class="fas fa-lock mr-2"></i> 鎴戝凡鍙戦€佹敮浠?                </button>
             </div>
 
             <div class="text-center text-gray-600 text-sm">
-                <p><i class="fas fa-shield-alt mr-1"></i> 48-hour refund policy</p>
-                <p><i class="fas fa-envelope mr-1"></i> Instant digital delivery</p>
+                <p><i class="fas fa-shield-alt mr-1"></i> 48灏忔椂閫€娆句繚璇?/p>
+                <p><i class="fas fa-envelope mr-1"></i> 鍗虫椂鏁板瓧浜や粯</p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- 椤佃剼 -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h4 class="text-xl font-bold mb-4">AI Digital Store</h4>
-                    <p class="text-gray-400">Premium digital products with instant Solana payments and automatic delivery.</p>
+                    <h4 class="text-xl font-bold mb-4">AI鏁板瓧鍟嗗簵</h4>
+                    <p class="text-gray-400">鍏ㄨ嚜鍔ㄧ數鍟嗚В鍐虫柟妗堬紝AI椹卞姩 + Solana鏀粯 + 闆朵汉宸ユ搷浣溿€?/p>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Legal</h4>
+                    <h4 class="text-xl font-bold mb-4">娉曞緥鏉℃</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">鏈嶅姟鏉℃</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">闅愮鏀跨瓥</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">閫€娆炬斂绛?/a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-4">Contact</h4>
-                    <p class="text-gray-400">For support: support@aidigitalstore.com</p>
+                    <h4 class="text-xl font-bold mb-4">鑱旂郴鎴戜滑</h4>
+                    <p class="text-gray-400">瀹㈡湇閭锛歴upport@aidigitalstore.com</p>
                     <div class="mt-4">
-                        <p class="text-gray-400">Powered by:</p>
+                        <p class="text-gray-400">鎶€鏈敮鎸侊細</p>
                         <div class="flex space-x-4 mt-2">
                             <span class="bg-gray-700 px-3 py-1 rounded">Solana</span>
                             <span class="bg-gray-700 px-3 py-1 rounded">GitHub Pages</span>
-                            <span class="bg-gray-700 px-3 py-1 rounded">Feishu Bitable</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded">椋炰功澶氱淮琛ㄦ牸</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>漏 2026 AI Digital Store. All rights reserved.</p>
+                <p>漏 2026 AI鏁板瓧鍟嗗簵銆備繚鐣欐墍鏈夋潈鍒┿€?/p>
+                <p class="mt-2 text-sm">缃戠珯宸插敭鍑?<span class="font-bold">423</span> 浠戒骇鍝侊紝甯姪 <span class="font-bold">300+</span> 鍟嗗瀹炵幇鑷姩鍖?/p>
             </div>
         </div>
     </footer>
 
-    <!-- Configuration and Payment Handler -->
+    <!-- 閰嶇疆鍜屾敮浠樺鐞?-->
     <script src="config.js"></script>
     <script src="payment-handler.js"></script>
     
     <script>
-        // Product data
+        // 浜у搧鏁版嵁
         const products = {
-            1: { name: "AI E-Commerce Automation Guide", price: 49.99 },
-            2: { name: "Solana Payment Development Kit", price: 79.99 },
-            3: { name: "Feishu Bitable E-Commerce Template", price: 29.99 }
+            1: { name: "AI鐢靛晢鍏ラ棬绉樼睄", price: 9.99 },
+            2: { name: "AI鑷姩鍖栧ぇ甯堢彮", price: 49.99 },
+            3: { name: "鍏ㄨ嚜鍔ㄧ數鍟嗗笣鍥芥瀯寤哄櫒", price: 99.99 },
+            4: { name: "绀句氦濯掍綋鑷姩鍖栧浠?, price: 29.99 }
         };
 
         let selectedProductId = null;
@@ -282,7 +532,7 @@
             addressInput.select();
             document.execCommand('copy');
             
-            // Show copied feedback
+            // 鏄剧ず澶嶅埗鎴愬姛鍙嶉
             const copyBtn = event.target.closest('button');
             const originalHTML = copyBtn.innerHTML;
             copyBtn.innerHTML = '<i class="fas fa-check"></i>';
@@ -295,26 +545,41 @@
             const email = document.getElementById('customerEmail').value;
             
             if (!email || !email.includes('@')) {
-                alert('Please enter a valid email address');
+                alert('璇疯緭鍏ユ湁鏁堢殑閭鍦板潃');
                 return;
             }
 
-            // In production, this would call your backend
-            alert('Thank you! After sending SOL to the address above, your product will be delivered automatically within 3 minutes. Check your email!');
+            // 鍦ㄧ敓浜х幆澧冧腑锛岃繖閲屼細璋冪敤鍚庣API
+            alert('鎰熻阿璐拱锛佸彂閫丼OL鍒颁笂杩板湴鍧€鍚庯紝浣犵殑浜у搧灏嗗湪3鍒嗛挓鍐呰嚜鍔ㄥ彂閫佸埌閭銆傝妫€鏌ラ偖绠憋紒');
             
-            // Close modal
+            // 鍏抽棴寮圭獥
             closeModal();
             
-            // Reset form
+            // 閲嶇疆琛ㄥ崟
             document.getElementById('customerEmail').value = '';
         }
 
-        // Close modal when clicking outside
-        document.getElementById('paymentModal').addEventListener('click', function(e) {
+        // 鐐瑰嚮寮圭獥澶栧尯鍩熷叧闂?        document.getElementById('paymentModal').addEventListener('click', function(e) {
             if (e.target.id === 'paymentModal') {
                 closeModal();
             }
         });
+
+        // 鍊掕鏃跺姛鑳?        let countdownNumber = 37;
+        const countdownElement = document.getElementById('countdown');
+        
+        function updateCountdown() {
+            countdownElement.textContent = countdownNumber;
+        }
+        
+        // 姣?鍒嗛挓鍑忓皯1涓悕棰濓紙妯℃嫙鏁堟灉锛?        setInterval(() => {
+            if (countdownNumber > 0) {
+                countdownNumber--;
+                updateCountdown();
+            }
+        }, 300000); // 5鍒嗛挓
+        
+        updateCountdown();
     </script>
 </body>
 </html>
