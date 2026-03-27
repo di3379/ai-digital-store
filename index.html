@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Digital Store - Premium Digital Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .solana-btn {
+            background: linear-gradient(90deg, #9945FF 0%, #14F195 100%);
+            color: white;
+            font-weight: bold;
+        }
+        .solana-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-robot text-2xl"></i>
+                <h1 class="text-2xl font-bold">AI Digital Store</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#products" class="hover:text-gray-200">Products</a>
+                <a href="#how-it-works" class="hover:text-gray-200">How It Works</a>
+                <a href="#faq" class="hover:text-gray-200">FAQ</a>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Premium Digital Products for the AI Age</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Instant delivery. 100% digital. Powered by Solana payments.</p>
+            <a href="#products" class="bg-white text-purple-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-book-open text-5xl text-purple-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">AI E-Commerce Automation Guide</h3>
+                        <p class="text-gray-600 mb-4">80-page PDF with 10 automation templates</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">$49.99</span>
+                    </div>
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Step-by-step AI automation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 10 ready-to-use templates</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Case studies & examples</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Lifetime updates</li>
+                    </ul>
+                    <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(1)">
+                        Buy with Solana
+                    </button>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-code text-5xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Solana Payment Development Kit</h3>
+                        <p class="text-gray-600 mb-4">Complete payment integration code + guide</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">$79.99</span>
+                    </div>
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Full Solana payment integration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Automatic delivery system</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Email notification templates</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Commercial use license</li>
+                    </ul>
+                    <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(2)">
+                        Buy with Solana
+                    </button>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-table text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Feishu Bitable E-Commerce Template</h3>
+                        <p class="text-gray-600 mb-4">Ready-to-use e-commerce management system</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">$29.99</span>
+                    </div>
+                    <ul class="mb-6 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 4-module management system</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Product & order tracking</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Customer CRM built-in</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Financial reporting</li>
+                    </ul>
+                    <button class="w-full solana-btn py-3 rounded-lg font-bold text-lg mb-3" onclick="selectProduct(3)">
+                        Buy with Solana
+                    </button>
+                    <p class="text-sm text-gray-500 text-center"><i class="fas fa-bolt mr-1"></i> Instant digital delivery</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-shopping-cart text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">1. Select Product</h3>
+                    <p class="text-gray-600">Choose from our premium digital products</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fab fa-solana text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">2. Pay with Solana</h3>
+                    <p class="text-gray-600">Send SOL to our wallet address</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-check-circle text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">3. Automatic Verification</h3>
+                    <p class="text-gray-600">System confirms payment instantly</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow">
+                        <i class="fas fa-envelope text-2xl text-red-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">4. Instant Delivery</h3>
+                    <p class="text-gray-600">Product delivered via email automatically</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Complete Your Purchase</h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <div class="mb-6">
+                <h4 id="selectedProduct" class="font-bold text-lg mb-2"></h4>
+                <p id="selectedPrice" class="text-3xl font-bold text-gray-800 mb-4"></p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                    <p class="font-bold mb-2"><i class="fab fa-solana mr-2"></i> Send SOL to this address:</p>
+                    <div class="flex items-center">
+                        <input type="text" id="walletAddress" readonly value="7ZgWYsKXo5yoVPkHMYc2tZoZUpkQ41JrYy88t7nG8axv" class="flex-grow bg-gray-200 p-2 rounded-l text-sm font-mono">
+                        <button onclick="copyAddress()" class="bg-gray-800 text-white px-4 py-2 rounded-r">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">Network: <span class="font-bold">Solana</span></p>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Your Email Address</label>
+                    <input type="email" id="customerEmail" placeholder="you@example.com" class="w-full p-3 border border-gray-300 rounded-lg">
+                    <p class="text-sm text-gray-500 mt-1">We'll send the product to this email</p>
+                </div>
+
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                    <p class="font-bold text-yellow-800"><i class="fas fa-exclamation-triangle mr-2"></i> Important:</p>
+                    <p class="text-yellow-700 text-sm">After sending SOL, the system will automatically detect your payment and deliver the product within 3 minutes.</p>
+                </div>
+
+                <button onclick="processPayment()" class="w-full solana-btn py-3 rounded-lg font-bold text-lg">
+                    <i class="fas fa-lock mr-2"></i> I've Sent the Payment
+                </button>
+            </div>
+
+            <div class="text-center text-gray-600 text-sm">
+                <p><i class="fas fa-shield-alt mr-1"></i> 48-hour refund policy</p>
+                <p><i class="fas fa-envelope mr-1"></i> Instant digital delivery</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">AI Digital Store</h4>
+                    <p class="text-gray-400">Premium digital products with instant Solana payments and automatic delivery.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">For support: support@aidigitalstore.com</p>
+                    <div class="mt-4">
+                        <p class="text-gray-400">Powered by:</p>
+                        <div class="flex space-x-4 mt-2">
+                            <span class="bg-gray-700 px-3 py-1 rounded">Solana</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded">GitHub Pages</span>
+                            <span class="bg-gray-700 px-3 py-1 rounded">Feishu Bitable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>漏 2026 AI Digital Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Configuration and Payment Handler -->
+    <script src="config.js"></script>
+    <script src="payment-handler.js"></script>
+    
+    <script>
+        // Product data
+        const products = {
+            1: { name: "AI E-Commerce Automation Guide", price: 49.99 },
+            2: { name: "Solana Payment Development Kit", price: 79.99 },
+            3: { name: "Feishu Bitable E-Commerce Template", price: 29.99 }
+        };
+
+        let selectedProductId = null;
+
+        function selectProduct(productId) {
+            selectedProductId = productId;
+            const product = products[productId];
+            
+            document.getElementById('selectedProduct').textContent = product.name;
+            document.getElementById('selectedPrice').textContent = `$${product.price.toFixed(2)}`;
+            
+            document.getElementById('paymentModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+        }
+
+        function copyAddress() {
+            const addressInput = document.getElementById('walletAddress');
+            addressInput.select();
+            document.execCommand('copy');
+            
+            // Show copied feedback
+            const copyBtn = event.target.closest('button');
+            const originalHTML = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(() => {
+                copyBtn.innerHTML = originalHTML;
+            }, 2000);
+        }
+
+        function processPayment() {
+            const email = document.getElementById('customerEmail').value;
+            
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            // In production, this would call your backend
+            alert('Thank you! After sending SOL to the address above, your product will be delivered automatically within 3 minutes. Check your email!');
+            
+            // Close modal
+            closeModal();
+            
+            // Reset form
+            document.getElementById('customerEmail').value = '';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('paymentModal').addEventListener('click', function(e) {
+            if (e.target.id === 'paymentModal') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
